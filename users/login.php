@@ -537,8 +537,8 @@ if (empty($dest = sanitizedDest('dest'))) {
                         } else {
                             require_once $abs_us_root . $us_url_root . "users/views/_social_logins.php";
                         }
-                        error_log("Blipp from pre hook fetch");
-                        error_log(print_r($hooks,true),0);
+                      //  error_log("Blipp from pre hook fetch");
+                       // error_log(print_r($hooks,true),0);
                         includeHook($hooks, 'bottom');
                         ?>
                     <?php endif; ?>
