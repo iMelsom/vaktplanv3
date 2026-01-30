@@ -1066,7 +1066,7 @@ if (!function_exists('getMyHooks')) {
 if (!function_exists('includeHook')) {
   function includeHook($hooks, $position)
   {
-      error_log("blipp");
+      error_log("blipp from function definition");
       global $db, $abs_us_root, $us_url_root, $usplugins, $hookData;
     if (is_null($hookData)) {
       $hookData = [];
