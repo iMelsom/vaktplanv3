@@ -1075,13 +1075,13 @@ if (!function_exists('includeHook')) {
 
     if (is_array($hooks) && isset($hooks[$position])) {
       foreach ($hooks[$position] as $h) {
-          //error_log($abs_us_root . $us_url_root . 'usersc/plugins/' . $h);
+          error_log($abs_us_root . $us_url_root . 'usersc/plugins/' . $h);
           if (isset($h)) error_log("isset OK");
           if (!isset($h)) error_log("isset NOT OK");
           if (file_exists($abs_us_root . $us_url_root . 'usersc/plugins/' . $h)) error_log("file OK");
           if (!file_exists($abs_us_root . $us_url_root . 'usersc/plugins/' . $h)) error_log("file NOT OK");
-          if($h != '')error_log("H not empty");
-          if($h == '')error_log("H empty");
+          if($h != '')error_log("H not empty (correct)");
+          if($h == '')error_log("H empty (fail)");
           if (isset($h) && file_exists($abs_us_root . $us_url_root . 'usersc/plugins/' . $h) && $h != '') {
           $plugin = strstr($h, '/', 'before_needle');
 //          error_log("blipp from function definition");
