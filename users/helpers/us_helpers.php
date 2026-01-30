@@ -1066,9 +1066,8 @@ if (!function_exists('getMyHooks')) {
 if (!function_exists('includeHook')) {
   function includeHook($hooks, $position)
   {
-      error_log("blipp from function definition");
-      error_log($position);
-      error_log(print_r($hooks,true),0);
+      //error_log($position);
+      //error_log(print_r($hooks,true),0);
       global $db, $abs_us_root, $us_url_root, $usplugins, $hookData;
     if (is_null($hookData)) {
       $hookData = [];
@@ -1076,11 +1075,12 @@ if (!function_exists('includeHook')) {
 
     if (is_array($hooks) && isset($hooks[$position])) {
       foreach ($hooks[$position] as $h) {
-          error_log($abs_us_root . $us_url_root . 'usersc/plugins/' . $h);
+          //error_log($abs_us_root . $us_url_root . 'usersc/plugins/' . $h);
         if (isset($h) && file_exists($abs_us_root . $us_url_root . 'usersc/plugins/' . $h) && $h != '') {
           $plugin = strstr($h, '/', 'before_needle');
           if (isset($usplugins[$plugin]) && $usplugins[$plugin] == 1) { //only include this file if plugin is installed and active.
-            include $abs_us_root . $us_url_root . 'usersc/plugins/' . $h;
+              error_log("blipp from function definition");
+              include $abs_us_root . $us_url_root . 'usersc/plugins/' . $h;
           }
           //does the link include the string "oauth", manually include it
         } elseif (strpos($h, 'oauth') !== false && file_exists($abs_us_root . $us_url_root . $h)) {
