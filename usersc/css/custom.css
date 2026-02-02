@@ -1,13 +1,13 @@
 /*test*/
 .btn-warning {
-  --bs-btn-color: #fff;
+  --bs-btn-color: red;
   --bs-btn-bg: red;
-  --bs-btn-border-color: var(--bs-warning);
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: var(--bs-warning-hover, var(--bs-warning));
-  --bs-btn-hover-border-color: var(--bs-warning-hover, var(--bs-warning));
-  --bs-btn-focus-shadow-rgb: var(--bs-warning-rgb);
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: var(--bs-warning-hover, var(--bs-warning));
-  --bs-btn-active-border-color: var(--bs-warning-hover, var(--bs-warning));
+  --bs-btn-border-color: red;
+  --bs-btn-hover-color: red;
+  --bs-btn-hover-bg: red;
+  --bs-btn-hover-border-color: red;
+  --bs-btn-focus-shadow-rgb: red;
+  --bs-btn-active-color: red;
+  --bs-btn-active-bg: red;
+  --bs-btn-active-border-color: red;
 }
