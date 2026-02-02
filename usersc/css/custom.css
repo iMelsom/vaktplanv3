@@ -1,2 +1,13 @@
 /*test*/
-.bs-btn-bg{ color:red}
+.btn-warning {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: red;
+  --bs-btn-border-color: var(--bs-warning);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bs-warning-hover, var(--bs-warning));
+  --bs-btn-hover-border-color: var(--bs-warning-hover, var(--bs-warning));
+  --bs-btn-focus-shadow-rgb: var(--bs-warning-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-warning-hover, var(--bs-warning));
+  --bs-btn-active-border-color: var(--bs-warning-hover, var(--bs-warning));
+}
