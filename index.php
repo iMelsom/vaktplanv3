@@ -14,7 +14,7 @@ if(isset($user) && $user->isLoggedIn()){
   
 }
 ?>
-		<div class="jumbotron Yellow">
+		<div class="jumbotron">
 				<?php
 				if($user->isLoggedIn()){
 				    require_once $pages[$page];
