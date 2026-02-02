@@ -1,10 +1,10 @@
 <?php
 if ($uid != ""){ //block page usage WO login
-    require_once 'vaktplan_files/turnus_dialogs.php';
     //Settig default values
     //AvdelingID, trengs for å behandle rett turnus
     $guid = getGUID($page); 
     $AvdName = hentAvdelingsnavn($guid);
+    require_once 'vaktplan_files/turnus_dialogs.php';
     
     //error_log($guid);
     //error_log($guid);

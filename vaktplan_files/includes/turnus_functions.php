@@ -635,8 +635,8 @@ function HentVaktUdekket($Offset, $unixtime, $turnus, $Tur_Startdato){
 		    $Statement= "SELECT `permission_id` FROM `user_permission_matches` WHERE  `user_id` = :BrukerID AND `permission_id` > '4';";
 			$QueryData = array("BrukerID" => $uid);
 			
-			error_log($Statement);
-			error_log(print_r($QueryData,true),0);
+			//error_log($Statement);
+			//error_log(print_r($QueryData,true),0);
 			
 			$data = QueryMySQLPrepped($QueryData, $Statement, $GLOBALS['config']['mysql']['db']);
 			if(count($data) > 0){
