@@ -3,6 +3,8 @@ error_reporting(E_ERROR);
 setlocale(LC_TIME, 'nb_NO.utf8');
 //date_default_timezone_set ("Europe/Oslo" );
 //Testmode?
+$uid = $user->data()->id;
+
 $page = isset($definedUserVariables[2])? $definedUserVariables[2] : "Turnus";
 $page = isset($_REQUEST['page'])? $_REQUEST['page'] : $page;
 
