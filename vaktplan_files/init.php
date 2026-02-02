@@ -38,7 +38,7 @@ else{
 
 if ($GLOBALS['testmode'] ==  "NotTest"){
     $GLOBALS['Database'] = 'vaktplan';
-    $GLOBALS['UserDB'] = 'vaktplan_users';
+    $GLOBALS['UserDB'] = 'vaktplanv3_users';
 }
 
 //Add some local dates
