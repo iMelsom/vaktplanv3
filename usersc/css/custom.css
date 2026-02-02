@@ -1,13 +1,2 @@
 /*test*/
-.btn-warning {
-  --bs-btn-color: red;
-  --bs-btn-bg: red;
-  --bs-btn-border-color: red;
-  --bs-btn-hover-color: red;
-  --bs-btn-hover-bg: red;
-  --bs-btn-hover-border-color: red;
-  --bs-btn-focus-shadow-rgb: red;
-  --bs-btn-active-color: red;
-  --bs-btn-active-bg: red;
-  --bs-btn-active-border-color: red;
-}
+body{background-color:#ff0000}
