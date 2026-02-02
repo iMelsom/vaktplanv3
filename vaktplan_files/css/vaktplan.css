@@ -1,0 +1,872 @@
+
+/* colors */ 
+.Yellow{background-color: #ffe066;}
+.Red{background-color:#ff0000}
+.Gray{background-color: #e3e5e8;}
+.GrayOut{background-color: #e3e5e8;}
+.White,.dag{background-color: #ffffff;}
+.Black{background-color: #000000;}
+.Dag{background-color: #ffffff;}
+.Kveld{background-color: #ff9900;}
+.Natt{color: #ffffff; background-color: #003399; border-color: #000000;}
+
+.f{Background-color: #000099;}
+.a{background-color: #0066ff;}
+.p{background-color: #00ccff;}
+.s{background-color: #D99594;}
+.k{background-color: #009933;}
+.g{background-color: #9966ff;}
+.u{background-color: #ff9933;}
+.a2{background-color: #00cc66;}
+.h{background-color: #ffff00;}
+.faml{background-color: #5c3a8c;}
+.spd{background-color: #91ab85;}
+.sx{background-color: #ebc7c6;}
+.ofr{background-color: #348feb;}
+
+.Axx1{background-color: #ffffff;}
+.Axx2{background-color: #f2f2f2;}
+
+.NormalDay{background-color: #cce6ff;}
+.Today{background-color: #99FF99; }
+.TodayHoliday{background-color: #ff8080; }
+.Holiday{background-color: #ffcccc; }
+
+/* Fonts */ 
+
+@font-face {
+font-family: TurnusDefault;
+src: url(/users/fonts/AftaSansThin-Regular.otf);
+size: 10px;
+}
+
+.WhiteTXT{
+	color: #ffffff;
+}
+
+/* Master Tags */
+html,
+body {
+  height: 100%;
+}
+
+a{
+	text-decoration: none;
+/*	font-family: TurnusDefault; */ 
+	color: black;
+	}
+
+.table{
+/*	font-family: TurnusDefault; */ 
+font-size: 12px;
+text-align: center;
+}
+
+.TableTitle{
+font-weight: bold;
+}
+
+/* adjustments */
+.centerWrapper{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Default table: */
+.defTable{
+/*width: 1015px;*/
+padding: 3px;
+Top: 120px;
+}
+
+.defRow{
+position: relative;
+float: down;
+height: 42px;
+}
+
+.defCol{
+position: relative;
+float: left;
+height: 42px;
+}
+
+.defCell{
+float: left;	
+height: 40px;
+text-align: center;
+}
+
+
+
+.defCellDown{
+float: down;	
+height: 33px;
+text-align: center;
+}
+
+.defTitle, .defName, .defDay, .defInfo, .Selector, .border_NoRight, .border_NoLeft{
+text-align: center;
+padding: 3px;
+}
+
+.defTitle, .defName, .defDay, .defInfo, .Selector{
+border: 2px solid black;
+}
+
+.border_NoRight,.border_NoLeft, .border_divider {
+ border-top: 2px solid black;
+ border-bottom: 2px solid black;
+}
+.border_NoRight{
+ border-left: 2px solid black;
+}
+.border_NoLeft{
+ border-right: 2px solid black;
+}
+.defTitle{
+float: left;	
+width: 1002px;	
+}
+
+.defName, .invisiCell, .invisiCellDown{
+font-size: 12px;	
+	width: 248px;
+}
+.defName_half{
+font-size: 12px;	
+	width: 114px;
+}
+.defName_divider{
+width: 20px;
+  background-color: #99FF99;
+}
+.defName_divider_y{
+width: 20px;
+  background-color: #cce6ff;
+}
+.defName_divider_t{
+width: 20px;
+  background-color: #EBC7C6;
+}
+
+.defName_divider::before,.defName_divider_y::before,.defName_divider_t::before {
+  position: absolute;
+  content: "";
+  top: 2px; 
+  width: 10px;
+  height: 36px;
+  background-color: #99FF99; 
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.defName_divider_y::before{
+  background-color: #cce6ff;
+}
+.defName_divider_t::before{
+  background-color: #EBC7C6;
+}
+
+.defName_divider::after,.defName_divider_y::after,.defName_divider_t::after{
+  position: absolute;
+  content: "";
+  top: 2px; 
+  width: 10px;
+  height: 36px;
+  background-color: #e3e5e8;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.defName_dividerRed, .defName_divider_yRed, .defName_divider_tRed{
+width: 20px;
+  background-color: #ff0000;
+}
+
+.defName_dividerRed::before,.defName_divider_yRed::before,.defName_divider_tRed::before {
+  position: absolute;
+  content: "";
+  top: 2px; 
+  width: 10px;
+  height: 36px;
+  background-color: #ff0000; 
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.defName_divider_yRed::before, .defName_divider_tRed::before{
+  background-color: #ff0000;
+}
+
+.defName_dividerRed::after,.defName_divider_yRed::after,.defName_divider_tRed::after{
+  position: absolute;
+  content: "";
+  top: 2px; 
+  width: 10px;
+  height: 36px;
+  background-color: #ff0000;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+
+
+.Selector{
+width: 120px;
+}
+
+.invisiCellDown{
+height: 33px;	
+}
+.defDay{
+width: 150px;
+}
+
+.defInfo, .defContent{
+width: 100px;
+}
+
+.defInput{
+	text-align: right;
+}
+
+/* Turnus: */
+.turnusWrap{
+	position: relative;
+	display: inline-flex;
+	width:95vw;
+}
+
+.turnusAgentList{
+	position: relative;
+	float: left;
+}
+
+.turnusContentCells{
+/*	text-align: center;
+	border: 1px solid black;
+	width: 30px;
+*/
+font-size: 8px;
+font-weight: bold;
+text-align: center;
+/*position: relative;*/
+width: 25px;
+height: 36px;
+/*float: down;*/
+border: 1px solid;
+
+}
+
+.turnusAgents{
+	text-align: center;
+	border: 1px solid black;
+	position: relative;
+}
+
+.turnusAgents{
+	position: relative;
+	width: 248px;
+}
+
+.turnusCol{
+/*	display: inline-block;
+	margin : -2.5px;*/
+float:left;
+	width:25px;
+}
+
+.turnusInfoCell{
+	
+}
+
+.turnusDatoValg{
+	height: 134px;
+}
+
+.turnusDatoRow{
+	text-align: center;
+	height: 25px;
+	width: 100%;
+}
+
+.TurnusDefaultCellHeight{
+	height: 40px;
+}
+
+.TurnusAgentCellHeight{
+	height: 40px;
+}
+
+.turnusYearHead{
+	text-align: center;
+	float: left;
+	}
+
+.YrRigth,.MntRight,.MntLeft,.YrLeft{
+	position: absolute;
+	width: 100px;
+	text-align: center;
+}
+
+.YrRigth{
+	left: 10px;
+}
+
+.MntRight{
+	left: 100px;
+	}
+
+.headDivider{
+	position: absolute;
+	left: 275px;
+	text-align: center;
+	font-size: 10px;
+}
+
+.MntLeft{
+	right:100px;
+	}
+
+.YrLeft{
+	right:0px;
+}	
+	
+.turnusMonthHead{
+	position: relative;
+	float: left;
+}
+.turnusYearHead{
+/*	border-left: 1px solid;*/
+}
+
+.turnusWeekHead, .turnusDayHead{
+}
+
+.turnusDayHead{
+	border: 1px solid black;
+}
+.farger{
+	font-size: 10px;
+	position: relative;
+	float: left;
+}
+.beskrivelse{
+position: relative;
+height: 20px;
+width: 8px;
+float: left;
+border: 1px solid;
+}
+
+.numMonths{
+width: 25px;	
+}
+.strtDate{
+width: 78px;	
+}
+
+
+div .beskrivelsetext{
+font-size: 8px;
+width: 80px;
+position: relative;
+height: 20px;
+}
+.fravBeskrivelse{
+	width: 250px;
+}
+
+/* Utilidivs: */
+.markCell{
+	width: 15px;
+}
+
+.spacer{
+position: relative;
+float: left;
+width: 3px;
+padding: 1px;
+}
+
+.spacerDown{
+position: relative;
+float: down;
+height: 3px;
+padding: 1px;
+}
+
+ .Udekket{
+	position: relative;
+	height: 75px;
+	white-space: pre-wrap;
+ }
+
+.Scrolltainer{
+	position: relative;
+	float: left;
+	max-width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	border: 1px solid;
+}
+.Scrolltainer_vert{
+	position: relative;
+	float: left;
+	max-height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	white-space: nowrap;
+	border: 1px solid;
+}
+ .ScrollInternal{
+	position: relative;
+	white-space: nowrap;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.wrapper{ /* ibruk? */
+	white-space: nowrap;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.jumbotron{
+	position: relative;
+	top: 10px;
+	height:90vh;	
+	width:95vw;
+	padding: 4px;	
+	left:2vw;
+}
+.container{
+	width: 100%;
+}
+.page-wrapper{
+	width: 100%;
+	
+}
+
+.instContainer{
+	padding: 5px;
+}
+
+.instSelector{
+	width: 275px;
+	text-align: center;
+}
+
+.InnstillingBoks{
+width: 350px;	
+border: 1px solid;
+}
+
+.instHeader{
+font-size: 16px;
+font-weight: Bold;
+text-align: center;
+border: 1px solid;
+}
+
+.instInput{
+	padding: 3px;
+}
+
+.instHelp{
+	padding: 5px;
+	font-size: 12px;
+font-style: italic;
+}
+
+.instFormInput{
+	width: 270px;
+}
+
+.instmailInput{
+	width: 220px;
+}
+
+.instCol{
+	position: relative;
+	padding: 10px;
+	float: left;
+}
+.full-spectrum .sp-palette {
+max-width: 200px;
+}
+
+span#savedemail, span#savedoppstart, span#savedNumMonths, span#savedPreDays, span#sendResults, span#savedDumpUpdate{
+            background-color: rgba(0,255,0,0.25);
+            color: green;
+            font-size: 12pt;
+            opacity: 0;
+            padding: 2px;
+            border: 1px solid rgba(0,128,0,0.25);
+            border-radius: 3px;
+}
+ 
+.custom-card{
+	-ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;}
+    
+.ListFrav, .ListVaktTyper, .ListAvvik{
+/*	font-family: TurnusDefault; */ 
+	font-size: 12px;
+	position: static;
+	border: 2px solid;
+	padding: 3px;
+}
+
+.ListAvvik{
+	height: 625px;
+	width: 900px;
+}
+
+.ListFrav{
+	width: 579px;
+}
+
+.ListVaktTyper{
+	float:left;
+	height: 100%;
+	width: 907px;
+}
+    
+.FravRow, .VaktRow{
+	position: relative;
+	float: down;
+	height: 42px;
+}
+
+.FrawRow{
+	width: 570px;
+}
+  
+.Reason,.fravDate, .NumDays, .chButton, .YearArrow, .frvTitle, .fWho, .fDate, .fData{
+position: relative;
+height: 40px;
+float: left;
+border: 2px solid;
+padding: 3px;
+}
+
+.fravText{
+width: 570px;
+position: relative;
+height: 28px;
+border: 2px solid;
+padding: 3px;
+float: down;
+}  
+
+.fravDate{
+width: 126.5px;
+}
+
+.NumDays{
+width: 76.5px;
+}
+ .chButton{
+width: 101px;
+text-align: center
+}
+
+.Reason{
+width: 126.5px;
+}
+.frvTitle{
+width: 413px;
+}
+
+.taWide{
+width: 713px;
+}
+
+.fData{
+width: 586px;
+}
+.fWho, .fDate{
+width: 86.5px;
+}
+.YearArrow{
+font-weight: bold;
+width: 75px;
+}
+
+
+.VaktRow{
+width: 900px;
+}
+
+.spacer{
+position: relative;
+float: left;
+width: 3px;
+padding: 1px;
+}
+
+.vCode,.vStart, .vEnd, .vLen, .vDescr, .vLoc, .vNewButton, .vHead{
+position: relative;
+height: 40px;
+float: left;
+border: 2px solid;
+padding: 3px;
+}
+
+.vHead{
+width: 898px;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+}
+
+.vCode, .vLen{
+width: 60px;
+}
+
+.vStart, .vEnd{
+width: 70px;
+}
+
+.vDescr{
+width: 200px;
+}
+
+.vLoc{
+width: 90px;
+}
+
+.vNewButton{
+width: 120px;
+}
+
+.tViewWrapper{
+position: relative;
+width: 1500px;
+height: 450px;
+}
+
+.AdminWrapper{
+}
+
+.TurnusViewer{
+position: relative;
+box-shadow: 6px 6px 3px #888888;
+}
+
+.CurrentTurnus{
+padding-left: 10px;
+	width: 395px;
+float: left;
+}
+.PrevTurnus, .NextTurnus{
+padding-left: 10px;
+	width: 250px;
+float: left;
+}
+
+.TurnusSpacer{
+width: 50px;
+float: left;
+}
+.AdminButtons{
+padding: 3px;
+width: 175px;
+float: left;
+border: 1px solid;
+background-color: #f2f2f2;
+}
+
+.HeadLine{
+width: 410px;
+float: down;
+}
+
+.WeekLine{
+width: 255px;
+}
+
+.Vakt{
+font-size: 12px;
+font-weight: bold;
+text-align: center;
+width: 25px;
+height: 22px;
+float: left;
+border: 1px solid;
+}
+
+.LHead{
+width: 60px;
+}
+.LeaderHead{
+width: 235px;
+}
+
+.LTail{
+width: 148px;
+}
+
+.uAssignHead{
+font-size: 12px;
+font-weight: bold;
+text-align: center;
+width: 150px;
+background-color: #ffe066;
+border: 1px solid;
+}
+
+.UnassignedPersonell{
+margin-top: 5px;
+margin-bottom: 5px;
+width: 152px;
+min-height: 250px;
+border: 1px solid;
+}
+.UnassignedInfo{
+	padding-left: 10px;
+margin-left: 10px;
+width: 152px;
+border: 1px solid;
+float: left;
+}
+
+.floatLeft{
+	float: left;
+}
+
+.floatDown{
+	float: down;
+}
+
+.dragdropTurAssign {
+height: 24px;
+width: 145px;
+text-align: center;
+font-size: 12px;
+font-weight: bold;
+}
+
+.emptyTur{
+height: 24px;
+background-color: lightblue;
+}
+
+.TurnusViewerHead, .TurnusBox{
+width: 238px;
+border: 1px solid;
+}
+
+.target{
+width: 149px;
+}
+
+.Unassigned{
+min-height: 250px;
+}
+.Assigned{
+	height: 24px;
+	border: 1px solid;
+}
+.TurnusViewerHead{
+background-color: #ffe066;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+}
+
+.TurnusViewerTail, .AssignedPersonell{
+width: 150px;
+border: 1px solid;
+}
+
+.TurnusViewerTail{
+background-color: #ffe066;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+}
+
+.AssignedPersonell{
+position: absolute;
+left: 247px;
+top: 65px;
+}
+
+.admWidth{
+width: 110px;
+}
+
+.Week{
+font-family: TurnusDefault; 
+position: relative;
+float: down;
+height: 115px;
+width: 950px;
+border: 2px solid;
+background-color: #ffffff; 
+}
+
+.single{
+width: 955px;
+}
+
+.Week_head{
+position: static;
+height: 33px;
+width: 950px;
+border: 2px solid;
+background-color: #e3e5e8; 
+}
+
+.WeekNR{
+position: relative;
+padding: 3px;
+float: left; 
+width: 30px;
+height: 100px;
+background-color: #e3e5e8; 
+}
+
+.Month{
+position: static;
+height: 615px;
+width: 960px;
+border: 2px solid;
+padding: 3px;
+background-color: #e3e5e8; 
+}
+
+.WeekDay{
+position: relative;
+padding: 3px;
+float: left; 
+width: 130px;
+}
+
+.href_adjust{
+	position: relative;
+	top: -4px;
+	left: 3px; 
+}
+
+.Day_empty{
+position: relative;
+top: 2px;
+float: left;
+left: 3px; 
+width: 27px;
+height: 20px;
+border: 1px solid;
+background-color: white; 
+}
+
+.WeekDay_head{
+position: relative;
+padding: 3px;
+float: left; 
+left: 3px; 
+width: 130px;
+}
+
+.Sunday{
+width: 100px;
+}

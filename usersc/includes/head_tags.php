@@ -23,3 +23,6 @@
 <?php //URL for preview image ?>
 <meta property="og:image" content="">
 <link rel="shortcut icon" href="<?=$us_url_root?>favicon.ico">
+
+<?php //Vaktplan stylesheet ?>
+<link rel="stylesheet" href="/vaktplan_files/css/vaktplan.css">

@@ -5,7 +5,7 @@ require_once $abs_us_root.$us_url_root.'users/includes/template/prep.php';
 if(isset($user) && $user->isLoggedIn()){
 }
 ?>
-		<div class="jumbotron">
+		<div class="jumbotron Yellow">
 			<h1 align="center"><?=lang("JOIN_SUC");?> <?php echo $settings->site_name;?></h1>
 			<p align="center" class="text-muted"><?=lang("MAINT_OPEN")?></p>
 			<p align="center">
