@@ -1,0 +1,29 @@
+.Scrolltainer{
+position: relative;
+float: left;
+/*min-height: 825px;*/
+/*left: -256px;*/
+max-width: 65%;
+overflow-x: auto;
+overflow-y: hidden;
+white-space: nowrap;
+border: 1px solid;
+}
+
+.testTitle{
+position: relative;
+float: left;	
+width: 10010px;	
+}
+.wrapper{
+min-width:800px;
+white-space: nowrap;
+display: inline-block;
+margin-bottom: 5px
+}
+
+.Yellow{background-color: #ffe066;}
+.White{background-color: #ffffff;}
+.Dag{background-color: #ffffff;}
+.Kveld{background-color: #ff9900;}
+.Natt{background-color: #003399; color : #ffffff;border-color: black;}
