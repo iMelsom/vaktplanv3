@@ -4,6 +4,16 @@ $urlmod = "";
     $urlmod = "mobile_";
 }
 */
+
+require_once "vaktplan_files/MobileDetect/Mobile_Detect.php";
+$detect = new Mobile_Detect;
+// Any mobile device (phones or tablets).
+$urlmod = "";
+if ( $detect->isMobile() ) {
+    $urlmod = "mobile_";
+}
+
+
 require_once 'users/init.php';
 require_once $abs_us_root.$us_url_root.'users/includes/template/prep.php';
 if(isset($user) && $user->isLoggedIn()){
