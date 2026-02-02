@@ -33,6 +33,7 @@ if(isset($user) && $user->isLoggedIn()){
 					<a class="btn btn-warning" href="users/login.php" role="button"><?=lang("SIGNIN_TEXT");?> &raquo;</a>
 				<?php }?>
 		</div>
+		</div>
 <?php  languageSwitcher();?>
 
 
