@@ -2,10 +2,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <?php 
-header( 'Content-type: text/html; charset=utf-8' );
-
-ini_set("display_errors", 0);
-ini_set('session.gc_maxlifetime', '43200');//viewport tag is inside the template
+//viewport tag is inside the template
 // <meta name="viewport" content="width=device-width, initial-scale=1">
 ?>
 <meta name="description" content="">
