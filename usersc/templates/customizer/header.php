@@ -58,5 +58,6 @@ if(file_exists($abs_us_root.$us_url_root.'usersc/templates/'.$settings->template
 <?php require_once $abs_us_root . $us_url_root . "vaktplan_files/environment/vaktplan_header.php"; ?>
 
 </head>
+
 <body class="d-flex flex-column min-vh-100">
 <?php require_once($abs_us_root.$us_url_root.'users/includes/template/header3_must_include.php'); ?>
