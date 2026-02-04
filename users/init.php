@@ -29,26 +29,30 @@ for($i = 1; $i < $self_path_length; $i++){
 }
 
 require_once $abs_us_root.$us_url_root.'users/helpers/helpers.php';
+require '/var/www/html/minehjelpere/vakter/db_info_rw.php';
+$username = $config_mysql_user;
+$pass = $config_mysql_pass;
+$InitBase= 'vaktplanv3_users';
 
 // Set config
 $GLOBALS['config'] = array(
-	'mysql'      => array(
-	'force_utc_mysql' => false,
-	'charset'      => 'utf8mb4',		
-'host'         => 'localhost',
-'username'     => 'vaktplan',
-'password'     => '8fafqJ92_Uztp+8rR5',
-'db'           => 'vaktplanv3_users',
-'port'         => '3306',
-),
-'remember'        => array(
-  'cookie_name'   => 'hIenkKNvEGsnNXk1fAdf',
-  'cookie_expiry' => 604800  //One week, feel free to make it longer
-),
-'session' => array(
-  'session_name' => 'w5n6kAmkC3cIuxCdmQZF',
-  'token_name' => 'token',
-)
+    'mysql'      => array(
+        'force_utc_mysql' => false,
+        'charset'      => 'utf8mb4',
+        'host'         => 'localhost',
+        'username'     => $username,
+        'password'     => $pass,
+        'db'           => $InitBase,
+        'port'         => '3306',
+    ),
+    'remember'        => array(
+        'cookie_name'   => 'hIenkKNvEGsnNXk1fAdf',
+        'cookie_expiry' => 604800  //One week, feel free to make it longer
+    ),
+    'session' => array(
+      'session_name' => 'w5n6kAmkC3cIuxCdmQZF',
+      'token_name' => 'token',
+    )
 );
 
 //If you changed your UserSpice or UserCake database prefix
