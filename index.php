@@ -1,9 +1,5 @@
 <?php
 $urlmod = "";
-/*if ( $detect->isMobile() ) {
-    $urlmod = "mobile_";
-}
-*/
 
 require_once "vaktplan_files/MobileDetect/Mobile_Detect.php";
 $detect = new Mobile_Detect;
@@ -21,7 +17,6 @@ if(isset($user) && $user->isLoggedIn()){
   $mySession = Session::get($sessionName);
   Session::put($mySession, time()+43200);
   require_once 'vaktplan_files/init.php';
-  
 }
 ?>
 		<div class="jumbotron">
@@ -32,7 +27,6 @@ if(isset($user) && $user->isLoggedIn()){
 				<?php }else{?>
 					<a class="btn btn-warning" href="users/login.php" role="button"><?=lang("SIGNIN_TEXT");?> &raquo;</a>
 				<?php }?>
-		</div>
 		</div>
 <?php  languageSwitcher();?>
 
