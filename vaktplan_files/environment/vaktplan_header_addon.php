@@ -1,6 +1,6 @@
 <?php  //Vaktplan-additions:
 if (!isset($urlmod)) $urlmod ="";
-if(file_exists(Server::get('DOCUMENT_ROOT').'/vaktplan_files/css/vaktplan.css')){?><link href="/vaktplan_files/css/<?php echo $urlmod;?>vaktplan.css" rel="stylesheet">
+if(file_exists('vaktplan_files/css/vaktplan.css')){?><link href="/vaktplan_files/css/<?php echo $urlmod;?>vaktplan.css" rel="stylesheet">
 <?php } ?>
 
 
