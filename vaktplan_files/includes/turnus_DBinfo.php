@@ -6,7 +6,7 @@ function QueryMySQLPrepped($QueryData, $Statement, $DB){
     //error_log($Statement);
  //   error_log(print_r($QueryData,true),0);
     $config_mysql_host= "localhost"; //Your host name
-    require '/var/www/html/minehjelpere/vakter/db_info_rw.php';
+    require '/var/www/html/minehjelpere/vakter/db_info_ro.php';
     $config_mysql_database = $DB;
     error_log(getcwd() );
     //error_log($config_mysql_pass);
