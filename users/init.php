@@ -28,6 +28,9 @@ for($i = 1; $i < $self_path_length; $i++){
 	}
 }
 
+error_log($abs_us_root);
+error_log($us_url_root);
+
 require_once $abs_us_root.$us_url_root.'users/helpers/helpers.php';
 require getcwd().'/../vaktplan_files/environment/db_info.php';
 $username = $config_mysql_user;
