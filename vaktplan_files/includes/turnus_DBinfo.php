@@ -6,7 +6,7 @@ function QueryMySQLPrepped($QueryData, $Statement, $DB){
     //error_log($Statement);
  //   error_log(print_r($QueryData,true),0);
     $config_mysql_host= "localhost"; //Your host name
-    require getcwd().'/environment/db_info.php';
+    require getcwd().'/vaktplan_files/environment/db_info.php';
     $config_mysql_database = $DB;
     //error_log(getcwd() );
     //error_log($config_mysql_pass);
