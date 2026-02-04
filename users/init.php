@@ -29,7 +29,7 @@ for($i = 1; $i < $self_path_length; $i++){
 }
 
 require_once $abs_us_root.$us_url_root.'users/helpers/helpers.php';
-require '/var/www/html/underutvikling/vaktplanv3/db_info_rw.php';
+require '/var/www/html/underutvikling/vaktplanv3/db_info.php';
 $username = $config_mysql_user;
 $pass = $config_mysql_pass;
 $InitBase= 'vaktplanv3_users';
