@@ -55,7 +55,7 @@ if(isset($child_theme) && $child_theme != ''){
 if(file_exists($abs_us_root.$us_url_root.'usersc/templates/'.$settings->template.'.css')){?>
   <link href="<?=$us_url_root?>usersc/templates/<?=$settings->template?>.css" rel="stylesheet">
 <?php } ?>
-<?php require_once $abs_us_root . $us_url_root . "vaktplan_files/environment/vaktplan_header.php"; ?>
+<?php require_once $abs_us_root . $us_url_root . "vaktplan_files/environment/vaktplan_header_addon.php"; ?>
 
 </head>
 
