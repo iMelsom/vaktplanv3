@@ -33,6 +33,7 @@ require '/var/www/html/underutvikling/vaktplanv3/db_info.php';
 $username = $config_mysql_user;
 $pass = $config_mysql_pass;
 $InitBase= 'vaktplanv3_users';
+error_log(getcwd() );
 
 // Set config
 $GLOBALS['config'] = array(
