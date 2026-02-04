@@ -6,9 +6,9 @@ function QueryMySQLPrepped($QueryData, $Statement, $DB){
     //error_log($Statement);
  //   error_log(print_r($QueryData,true),0);
     $config_mysql_host= "localhost"; //Your host name
-    require '/var/www/html/minehjelpere/vakter/db_info_ro.php';
+    require getcwd().'/db_info.php';
     $config_mysql_database = $DB;
-    error_log(getcwd() );
+    //error_log(getcwd() );
     //error_log($config_mysql_pass);
     //error_log($DB);
     
@@ -37,8 +37,8 @@ function QueryMySQLPrepped($QueryData, $Statement, $DB){
 function WriteMySQLPrepped($QueryData, $Statement, $DB,  $UID){
     
     $config_mysql_host = "localhost"; //Your host name
-    require '/var/www/html/minehjelpere/vakter/db_info_rw.php';
-
+    //require '/var/www/html/minehjelpere/vakter/db_info_rw.php';
+    require getcwd().'/db_info.php';
     $config_mysql_database = $DB;
 
     $pdo = new PDO("mysql:host=$config_mysql_host;dbname=$config_mysql_database","$config_mysql_user","$config_mysql_pass");
