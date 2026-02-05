@@ -15,9 +15,9 @@ if(file_exists('vaktplan_files/css/vaktplan.css')){?><link href="/vaktplan_files
 <link rel="stylesheet" type="text/css" href="/vaktplan_files/css/timepicker.css">
 
 
-<script src = "/vaktplan_files/js/jquery-3.4.1.min.js">  </script>
-<script src = "/vaktplan_files/js/jquery-ui/jquery-ui.min.js">  </script>
-<script src = "/vaktplan_files/js/jquery-ui/jquery-ui.js">  </script>
+<script src = "/vaktplan_files/js/jquery-3.7.1.min.js">  </script>
+<script src = "/vaktplan_files/js/jquery-ui/1.14.2/jquery-ui.min.js">  </script>
+<script src = "/vaktplan_files/js/jquery-ui/1.14.2/jquery-ui.js">  </script>
 <script src = "/vaktplan_files/js/daterangepicker/moment.min.js">  </script>
 <script src = "/vaktplan_files/js/daterangepicker/daterangepicker.js">  </script>
 <script src = "/vaktplan_files/js/editDialog_frav.js">  </script>

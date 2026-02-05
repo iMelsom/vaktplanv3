@@ -13,7 +13,7 @@
 <?php
 global $chartsLoaded;
 if($chartsLoaded !="true"){ ?>
-<script nonce="<?=htmlspecialchars($usespice_nonce ?? '')?>" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script nonce="<?=htmlspecialchars($usespice_nonce ?? '')?>" src="vaktplan_files/js/chart.js"></script>
 <?php }
 $top = $db->query("SELECT id, fname, lname, logins FROM users ORDER BY logins DESC LIMIT 6")->results(true);
 shuffle($top);
