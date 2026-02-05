@@ -32,4 +32,4 @@ if(file_exists('vaktplan_files/css/vaktplan.css')){?><link href="/vaktplan_files
 <script src = "/vaktplan_files/js/datepicker-nb.js">  </script>
 <script src=  "/vaktplan_files/js/jscolor/jscolor.js"></script>
 
-<?php //vaktplan-addition ends ?>
+<?php //vaktplan-addition ends ?> 
