@@ -5,12 +5,12 @@ if(file_exists('vaktplan_files/css/vaktplan.css')){?><link href="/vaktplan_files
 
 
 <link rel="stylesheet" type="text/css" href="/vaktplan_files/css/spectrum.css">
-<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/jquery-ui.min.css">
-<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/jquery-ui.css">
-<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/jquery-ui.structure.min.css">
-<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/jquery-ui.structure.css">
-<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/jquery-ui.theme.css">
-<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/jquery-ui.theme.min.css">
+<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/1.14.2/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/1.14.2/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/1.14.2/jquery-ui.structure.min.css">
+<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/1.14.2/jquery-ui.structure.css">
+<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/1.14.2/jquery-ui.theme.css">
+<link rel="stylesheet" type="text/css" href="/vaktplan_files/js/jquery-ui/1.14.2/jquery-ui.theme.min.css">
 <link rel="stylesheet" type="text/css" href="/vaktplan_files/js/daterangepicker/daterangepicker.css">
 <link rel="stylesheet" type="text/css" href="/vaktplan_files/css/timepicker.css">
 
