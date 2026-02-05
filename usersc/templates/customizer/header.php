@@ -4,7 +4,7 @@ require_once($abs_us_root.$us_url_root.'usersc/templates/'.$settings->template.'
 ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="<?=$us_u-rl_root?>usersc/templates/<?=$settings->template?>/assets/fonts/glyphicons.css">
-<link rel="stylesheet" href="vaktplan_files/bootstrap/5.3.8/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="vaktplan_files/environment/bootstrap/5.3.8/css/bootstrap.min.css"/>
 
 <link href="<?=$us_url_root?>users/css/datatables.css" rel="stylesheet">
 <link href="<?=$us_url_root?>users/css/menu.css" rel="stylesheet">
@@ -16,7 +16,7 @@ require_once($abs_us_root.$us_url_root.'usersc/templates/'.$settings->template.'
 <?php
 require_once $abs_us_root . $us_url_root . "users/js/jquery.php";
 ?>
-<script nonce="<?=htmlspecialchars($usespice_nonce ?? '')?>" src="vaktplan_files/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+<script nonce="<?=htmlspecialchars($usespice_nonce ?? '')?>" src="vaktplan_files/environment/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
 
 <?php
 //if the theme has never been loaded before, it needs to be initialized. We do this so we can distribute it without css files and customizations in place
